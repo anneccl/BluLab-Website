@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 // Configuration de la font monospace
 const robotoMono = Roboto_Mono({
@@ -11,8 +12,11 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BluLab",
-  description: "Découvrez les derniers drops BluLab",
+  title: {
+    default: "BluLab",
+    template: "BluLab | %s"
+  },
+  description: "Découvrez les dernières nouveautés du BluLab",
 };
 
 export default function RootLayout({
@@ -27,6 +31,7 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

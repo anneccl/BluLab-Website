@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className=" w-full bg-white border-b border-[#D9D9D9]">
+    <nav className="w-full bg-white border-b border-[#D9D9D9]">
       <div className="max-w-7xl mx-auto px-6 py-4">
         
         <div className="grid grid-cols-3 items-center gap-4">
           
           {/* LIENS DE NAVIGATION */}
-          <div className="flex gap-8 justify-start">
+          <div className="flex gap-8 ">
             <Link 
               href="/events" 
               className="text-[#0B0B0B] font-medium text-[25px] tracking-wide hover:text-[#283AFE] hover:scale-110 hover:tracking-wider transition-all duration-300 ease-out"
