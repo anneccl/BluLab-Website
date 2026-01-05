@@ -26,6 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={robotoMono.variable}>
+      {/* <div className="min-h-screen bg-cover bg-center bg-no-repeat "
+          style={{ backgroundImage: "url('/fond.jpg')" }}> */}
       <body className="antialiased font-mono"> {/* ← Applique la font partout */}
         <Navbar />
         <main className="min-h-screen">
@@ -33,6 +35,7 @@ export default function RootLayout({
         </main>
         <Footer/>
       </body>
+      {/* </div> */}
     </html>
   );
 }
