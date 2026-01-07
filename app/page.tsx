@@ -23,10 +23,10 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-6 w-full">
             <div className="max-w-xl space-y-4">
-              <h1 className="text-white text-4xl md:text-5xl font-bold tracking-tight">
+              <h1 className="text-[#cae9ff] text-4xl md:text-5xl font-bold tracking-tight">
                 Where streetwear meets community.
               </h1>
-              <p className="text-white/90 text-base md:text-lg">
+              <p className="text-[#5FA8D3] text-base md:text-lg">
                 Drops limités, events, pop-ups et énergie BluLab.
               </p>
             </div>

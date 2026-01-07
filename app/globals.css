@@ -18,8 +18,9 @@
 
   /* Variables sémantiques */
   --color-primary: var(--blue-500);
-  --color-background: var(--white);
-  --color-foreground: var(--black);
+  /* --color-background: var(--black); */
+  --color-background: #C0C0C0;
+  --color-foreground: var(--white);
 }
 
 body {

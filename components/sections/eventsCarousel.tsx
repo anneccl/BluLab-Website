@@ -13,10 +13,10 @@ export default function EventsCarousel() {
           <div className="absolute -left-4 -top-6 w-72 h-32 bg-gradient-to-r from-[#283AFE]/10 to-[#4B5EFF]/5 blur-3xl -z-10" />
           
           <div className="relative">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#0B0B0B] uppercase">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#cae9ff] uppercase">
               Upcoming events
             </h2>
-            <p className="text-lg text-[#283AFE] mt-3 font-medium tracking-wide">
+            <p className="text-lg text-[#1B4965] mt-3 font-medium tracking-wide">
               Les prochains rendez-vous BluLab.
             </p>
           </div>
