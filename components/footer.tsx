@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className="flex items-center gap-5">
                         {/* Instagram */}
                         <a 
-                            href="https://www.instagram.com/blulab.inc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                            href="https://www.instagram.com/blulab.inc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" // URL Instagram
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="text-[#4B4B4B] hover:text-gray-900 transition-colors"
@@ -24,7 +24,7 @@ export default function Footer() {
 
                         {/* TikTok */}
                         <a 
-                            href="https://www.tiktok.com/@blulab.inc?_r=1&_t=ZS-92tOlxeXRiS" 
+                            href="https://www.tiktok.com/@blulab.inc?_r=1&_t=ZS-92tOlxeXRiS" // URL Tiktok
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="text-[#4B4B4B] hover:text-gray-900 transition-colors"
