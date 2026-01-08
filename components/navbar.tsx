@@ -14,7 +14,7 @@ export default function Navbar() {
               href="/events" 
               className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
             >
-              Events
+              Events 
             </Link>
             <Link 
               href="/drops" 
@@ -26,7 +26,7 @@ export default function Navbar() {
               href="/story" 
               className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
             >
-              Story
+              Notre Histoire
             </Link>
           </div>
 
