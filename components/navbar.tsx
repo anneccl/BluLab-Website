@@ -12,19 +12,19 @@ export default function Navbar() {
           <div className="flex gap-8 -ml-35">
             <Link 
               href="/events" 
-              className="text-black font-medium text-2xl tracking-wide hover:text-[#283AFE] hover:scale-105 transition-all duration-300 ease-out"
+              className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
             >
               Events
             </Link>
             <Link 
               href="/drops" 
-              className="text-black font-medium text-2xl tracking-wide hover:text-[#283AFE] hover:scale-105 transition-all duration-300 ease-out"
+              className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
             >
               Drops
             </Link>
             <Link 
               href="/story" 
-              className="text-black font-medium text-2xl tracking-wide hover:text-[#283AFE] hover:scale-105 transition-all duration-300 ease-out"
+              className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
             >
               Story
             </Link>
