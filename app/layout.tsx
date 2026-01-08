@@ -17,6 +17,39 @@ export const metadata: Metadata = {
     template: "BluLab | %s"
   },
   description: "Découvrez les dernières nouveautés du BluLab",
+
+  // LOGO/FAVICON
+  icons: {
+    icon: '/logo.svg',           // Favicon dans l'onglet
+    shortcut: '/logo.svg',       // Raccourci
+    apple: '/logo.svg',          // Icon iOS
+  },
+  
+  // OPEN GRAPH (partage sur réseaux sociaux)
+  openGraph: {
+    title: "BluLab - Where streetwear meets community",
+    description: "Drops limités, events, pop-ups et énergie BluLab.",
+    url: 'https://blulab.ci', //  URL du site
+    siteName: 'BluLab',
+    images: [
+      {
+        url: '/logo.svg',
+        width: 1200,
+        height: 120,
+        alt: 'BluLab Logo',
+      },
+    ],
+    locale: 'fr_CI',
+    type: 'website',
+  },
+  
+  // TWITTER CARD
+  twitter: {
+    card: 'summary_large_image',
+    title: "BluLab - Where streetwear meets community",
+    description: "Drops limités, events, pop-ups et énergie BluLab.",
+    images: ['/logo.svg'], 
+  },
 };
 
 export default function RootLayout({

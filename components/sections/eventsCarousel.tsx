@@ -10,7 +10,7 @@ export default function EventsCarousel() {
       <div className="max-w-7xl mx-auto px-6 mb-10">
         <div className="relative">
           {/* Fond stylé derrière le titre */}
-          <div className="absolute -left-4 -top-6 w-72 h-32 bg-gradient-to-r from-[#283AFE]/10 to-[#4B5EFF]/5 blur-3xl -z-10" />
+          <div className="absolute -left-4 -top-6 w-72 h-32 bg-gradient-to-r from-[#283AFE]/10 to-[#4B5EFF]/5 blur-2xl -z-10" />
           
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#cae9ff] uppercase">
