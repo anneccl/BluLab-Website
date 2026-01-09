@@ -51,6 +51,12 @@ export default function Navbar() {
               Panier (0)
             </button>
             */}
+            <Link 
+              href="/findus" 
+              className="text-[#001c55] font-medium text-2xl tracking-wide hover:text-[#c0d6df] hover:scale-105 transition-all duration-300 ease-out"
+            >
+              Find Us
+            </Link>
           </div>
 
         </div>
