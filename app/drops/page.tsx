@@ -8,12 +8,11 @@ export const metadata: Metadata = {
   title: "Drops"
 };
 
-
 const Drops = () => {
   return (
     <div>
       {/* SECTION IMAGE DE FOND AVEC TITRE DROPS */}
-      <section className="relative w-full h-screen min-h-[520px]">
+      <section className="relative w-full h-[70vh] md:h-screen min-h-[400px] md:min-h-[520px]">
         {/* Vidéo en arrière-plan */}
         <video
           autoPlay
@@ -30,12 +29,12 @@ const Drops = () => {
 
         {/* Texte par dessus - CENTRÉ */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="max-w-7xl mx-auto px-6 w-full">
-            <div className="max-w-2xl mx-auto space-y-6 text-center">
-              <h1 className="text-[#cae9ff] text-5xl md:text-7xl font-black tracking-tight uppercase">
+          <div className="max-w-7xl mx-auto px-4 md:px-6 w-full">
+            <div className="max-w-2xl mx-auto space-y-4 md:space-y-6 text-center">
+              <h1 className="text-[#cae9ff] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight uppercase">
                 Drops
               </h1>
-              <p className="text-[#5FA8D3] text-xl md:text-2xl font-medium">
+              <p className="text-[#5FA8D3] text-base sm:text-lg md:text-xl lg:text-2xl font-medium px-4">
                 Nos pépites exclusives. Collections limitées, drops uniques.
               </p>
             </div>
@@ -43,26 +42,11 @@ const Drops = () => {
         </div>
       </section>
 
-
-       {/* SECTION PRODUITS */}
-      <section className="py-20 ">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Titre de section */}
-          {/* <div className="relative mb-12">
-            <div className="absolute -left-4 -top-6 w-72 h-32 bg-gradient-to-r from-[#283AFE]/10 to-[#4B5EFF]/5 blur-2xl -z-10" />
-            
-            <div className="relative text-center">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#1B4965] uppercase">
-                Collections
-              </h2>
-              <p className="text-lg text-[#5FA8D3] mt-3 font-medium tracking-wide">
-                Découvrez nos derniers drops.
-              </p>
-            </div>
-          </div> */}
-
-          {/* Grille de produits */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* SECTION PRODUITS */}
+      <section className="py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+          {/* Grille de produits - 2 colonnes sur mobile, 3 sur desktop */}
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {DROPS.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -73,4 +57,4 @@ const Drops = () => {
   )
 }
 
-export default Drops
+export default Drops;

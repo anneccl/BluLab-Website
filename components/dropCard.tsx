@@ -1,4 +1,4 @@
-'use client'; // Indique à next.js que c'est un composant client
+'use client';
 
 import Image from "next/image";
 import Link from "next/link";
@@ -33,10 +33,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
       href={`/drops/${product.id}`}
       className="group block"
     >
-      <div className="space-y-3">
+      <div className="space-y-2 md:space-y-3">
         {/* Container Image */}
         <div 
-          className="relative aspect-[3/4] overflow-hidden bg-[#58B1FF] rounded-sm"
+          className="relative aspect-[3/4] overflow-hidden  rounded-sm"
           onMouseEnter={handleImageHover}
           onMouseLeave={handleImageLeave}
         >
@@ -45,35 +45,26 @@ const ProductCard = ({ product }: ProductCardProps) => {
             alt={product.title}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
           />
 
           {/* Badges en haut à gauche */}
-          <div className="absolute top-3 left-3 flex flex-col gap-2">
+          <div className="absolute top-2 md:top-3 left-2 md:left-3 flex flex-col gap-1 md:gap-2">
             {/* Badge disponibilité */}
             {product.availability !== "en_magasin" && (
-              <span className="bg-black/80 text-white text-xs px-3 py-1 uppercase tracking-wide font-medium">
+              <span className="bg-black/80 text-white text-[10px] md:text-xs px-2 md:px-3 py-0.5 md:py-1 uppercase tracking-wide font-medium">
                 {AVAILABILITY_LABEL_FR[product.availability]}
               </span>
             )}
-
-            {/* Tags */}
-            {/* {product.tags?.map((tag) => (
-              <span 
-                key={tag}
-                className="bg-white/90 text-black text-xs px-3 py-1 uppercase tracking-wide font-medium"
-              >
-                {TAG_LABEL_FR[tag]}
-              </span>
-            ))} */}
           </div> 
 
           {/* Indicateur d'images multiples */}
           {allImages.length > 1 && (
-            <div className="absolute bottom-3 right-3 flex gap-1">
+            <div className="absolute bottom-2 md:bottom-3 right-2 md:right-3 flex gap-1">
               {allImages.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                  className={`w-1 h-1 md:w-1.5 md:h-1.5 rounded-full transition-colors ${
                     index === currentImageIndex ? 'bg-white' : 'bg-white/40'
                   }`}
                 />
@@ -83,19 +74,19 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
 
         {/* Infos produit */}
-        <div className="space-y-1">
-          <h3 className="text-[#1B4965] text-base font-medium tracking-tight group-hover:text-[#58B1FF] transition-colors">
+        <div className="space-y-0.5 md:space-y-1">
+          <h3 className="text-[#1B4965] text-sm md:text-base font-medium tracking-tight group-hover:text-[#58B1FF] transition-colors line-clamp-2">
             {product.title}
           </h3>
           
-          <div className="flex items-center justify-between">
-            <p className="text-[#1B4965] text-sm font-bold">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5">
+            <p className="text-[#1B4965] text-xs md:text-sm font-bold">
               {formatPriceXOF(product.price)}
             </p>
             
             {/* Brand optionnel */}
             {product.brand && (
-              <p className="text-gray-500 text-xs uppercase tracking-wide">
+              <p className="text-gray-500 text-[10px] md:text-xs uppercase tracking-wide">
                 {product.brand}
               </p>
             )}

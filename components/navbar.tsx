@@ -51,7 +51,7 @@ export default function Navbar() {
 
         {/* Menu mobile déroulant */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white/55 backdrop-blur-md border-b border-[#D9D9D9] py-4">
+          <div className="md:hidden absolute top-full left-0 w-full bg-[#D9D9D9]/100 backdrop-blur-md border-b border-[#D9D9D9] py-4">
             <div className="flex flex-col items-center gap-4">
               <Link 
                 href="/events" 
