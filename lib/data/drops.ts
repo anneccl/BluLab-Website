@@ -120,20 +120,20 @@ export function isLowStock(item: DropItem, threshold = 2): boolean {
     return true;
 }
 
-// ---------- Example data ----------
+// ----------  data ----------
 export const DROPS: DropItem[] = [
   {
-    id: "01",
-    slug: "tshirt-logo-noir",
-    title: "T-shirt Logo Noir",
-    brand: "BluLab",
+    id: "tshirt01",
+    slug: "tshirt-noir",
+    title: "T-shirt Totem Africa Studio",
+    brand: "TOTEMAFRICASTUDIO",
     category: "tshirt",
     gender: "unisex",
     images: {
-      cover: "/images/drops/tshirt-logo-noir/cover.jpg",
+      cover: "/images/drops/tshirts/tshirt01-1.png",
       gallery: [
-        "/images/drops/tshirt-logo-noir/1.jpg",
-        "/images/drops/tshirt-logo-noir/2.jpg",
+        "/images/drops/tshirts/tshirt01-1.png",
+        "/images/drops/tshirts/tshirt01-2.png",
       ],
     },
     price: { amount: 15000, currency: "XOF" },
@@ -143,37 +143,36 @@ export const DROPS: DropItem[] = [
     shortDescription: "Coupe oversize, impression premium.",
   },
   {
-    id: "drop_002",
-    slug: "robe-satin-ivory",
-    title: "Robe Satin Ivoire",
-    brand: "Collection Studio",
+    id: "tshirt02",
+    slug: "tshirt-blanc",
+    title: "T-Shirt NouchiCrew",
+    brand: "NOUCHI CREW",
     collection: "Drop Janvier",
     category: "robe",
-    gender: "femme",
+    gender: "unisex",
     images: {
-      cover: "/images/drops/robe-satin-ivory/cover.jpg",
+      cover: "/images/drops/tshirts/tshirt002.png",
     },
-    price: { amount: 28000, currency: "XOF" },
+    price: { amount: 8000, currency: "XOF" },
     quantity: 0,
     availability: "rupture",
     tags: ["edition_limitee"],
     shortDescription: "Édition limitée — stocks très faibles.",
   },
   {
-    id: "drop_003",
-    slug: "sneakers-blanc-gris",
-    title: "Sneakers Blanc/Gris",
-    brand: "BluLab Select",
+    id: "pant01",
+    slug: "pantalon-jogging-noir-blanc",
+    title: "Panatalon wecollection2023",
+    brand: "WECOLLECTION 2023",
     category: "shoes",
     gender: "unisex",
     images: {
-      cover: "/images/drops/sneakers-blanc-gris/cover.jpg",
-      gallery: ["/images/drops/sneakers-blanc-gris/1.jpg"],
+      cover: "/images/drops/pants/pant01.png",
     },
     price: { amount: 45000, currency: "XOF" },
     quantity: 3,
-    availability: "arrive_bientot",
+    availability: "en_magasin",
     tags: ["exclusive"],
-    shortDescription: "Arrive bientôt en boutique.",
+    shortDescription: "La marque Wecollection2023 fait sa première entrée chez nous avec des sweatpants pensés pour le sport, le confort à la maison, ou même un look streetwear décontracté.",
   },
 ];
