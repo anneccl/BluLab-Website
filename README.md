@@ -17,14 +17,20 @@ Projet personnel : le site vitrine de BluLab, une marque de streetwear. Le site 
 
 ## Fonctionnalités
 
-Accueil : visuel plein écran, slogan, carrousel d'événements à venir
-Drops : catalogue de vêtements avec page de détail par article
-Events : liste des événements avec page de détail
-Notre histoire : présentation de la marque et de l'équipe
-Où nous trouver : page de localisation
-Données produits typées (catégorie, genre, disponibilité, tags, prix en XOF)
+Accueil : visuel plein écran, slogan, carrousel d'événements à venir <br>
+
+Drops : catalogue de vêtements avec page de détail par article <br>
+
+Events : liste des événements avec page de détail <br>
+
+Notre histoire : présentation de la marque et de l'équipe <br>
+
+Où nous trouver : page de localisation <br>
+
+Données produits typées (catégorie, genre, disponibilité, tags, prix en XOF) <br>
+
 Composants réutilisables (barre de navigation, pied de page, carte produit, carrousel)
-Animations (Framer Motion) et design adapté au mobile
+Animations (Framer Motion) et design adapté au mobile <br>
 
 ## Stack technique
 
